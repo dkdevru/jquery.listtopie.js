@@ -1,0 +1,52 @@
+svg
+{
+float:left;
+width:100%;
+height:100%;
+}
+
+.svg_row
+{
+display: inline-block;
+position: relative;
+width: 100%;
+height:100%;
+vertical-align: middle;  
+text-align:center;
+}
+
+h4
+{
+	text-align:center;
+}
+
+.title
+{
+	text-align:center;
+	font: 700 18px/32px 'Open Sans', sans-serif;
+	text-transform:uppercase;
+}
+
+.info_text
+{
+font: 900 16px/12px 'Open Sans', sans-serif;
+display:none;
+}
+
+.mup
+{
+	margin-top:50px;
+}
+
+.button-center
+{
+	padding:20px 0px;
+	text-align:center;
+}
+
+.menu_title
+{
+	font: 700 18px/28px 'Open Sans', sans-serif;
+	display:none;
+}
+
