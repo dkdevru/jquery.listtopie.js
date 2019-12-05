@@ -9,6 +9,890 @@ title: {{ site.name }}
   jquery.listtopie.js is a jQuery plugin that enables you to create your own unique, fully customizable SVG pie chart from your HTML code. Also, you can use Listtopie to implement menus and timelines.
   </p>
   
+  <!-- example1 -->
+    <div class="container">
+    <div class="row">
+      <div class="twelve column mup">
+        <h4>Example 1 Basic Usage</h4>
+        <hr>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+    
+    <h6 style="text-align:center;"><b>Largest producers by natural gas production (million m<sup><small>3</small></sup>)</b></h6>
+      
+     <div class="twelve columns">
+    <div class="six columns offset-by-three">
+    
+        <div class='rowtest1'>
+			<div data-lcolor="#97cc64">766,200<span>United States</span></div>
+			<div data-lcolor="#fd5a3e">635,500<span>Russia</span></div>
+			<div data-lcolor="#ffd963">184,800<span>Iran</span></div>
+			<div data-lcolor="#cdaab2">165,000<span>Qatar</span></div>
+			<div data-lcolor="#7c6250">149,90<span>Canada</span></div>
+		</div>
+
+    </div>
+</div>
+      
+    </div>
+  </div>
+  
+  <!-- example1 -->
+  
+  <!-- example2 -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="twelve column mup">
+        <h4>Example 2 Use list with value</h4>
+         <hr>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+  <div class="row">
+    
+<div class="five columns">
+	<div class='rowtest2'>
+		<div data-lcolor="#313c42">38.4<span>Coal</span></div>
+		<div data-lcolor="#ef8e39">23.2<span>Natural Gas</span></div>
+		<div data-lcolor="#005ce6">16.3<span>Hydro</span></div>
+		<div data-lcolor="#de2821">10.4<span>Nuclear fission</span></div>
+		<div data-lcolor="#7c6250">3.7<span>Oil</span></div>
+		<div data-lcolor="#00cc4b">8<span>Non hydro renew</span></div>
+	</div>
+</div>
+
+<div class="seven columns" style="padding-top:20px;">
+<h6><b>2016 World [civil] power generation by source [IEA, 2018]</b></h6>
+<div class='result_list'>
+</div>
+</div>
+
+</div>
+</div>
+  
+  <!-- example2 -->
+  
+  <!-- example3 -->
+  
+    <div class="container">
+    <div class="row">
+      <div class="twelve column mup">
+        <h4>Example 3 Loading JSON</h4>
+         <hr>
+      </div>
+    </div>
+  </div>
+  
+    <div class="container">
+  <div class="row">
+    <h6 style="text-align:center;"><b>Car exports by country (2017)</b></h6>
+<div class="three columns">
+<form>
+          <label for="exampleMessage">JSON</label>
+          <textarea class="u-full-width" placeholder="JSON" id="exampleJson">[{"name":"Germany","value":"20.75","color":"blue"},{"name":"Japan","value":"13.71","color":"red"},{"name":"United Kingdom","value":"5.48","color":"yellow"},{"name":"United States of America","value":"6.86","color":"gray"},{"name":"Spain","value":"4.71","color":"green"},{"name":"France","value":"2.99","color":"#e6c90e"},{"name":"South Korea","value":"5.30","color":"orange"},{"name":"Italy","value":"2.42","color":"#344d75"},{"name":"Belgium","value":"4.20","color":"#6b3882"},{"name":"Canada","value":"6.09","color":"#5fb89c"}]</textarea>
+          <input class="button-primary" type="button" id='ljson' value="Draw">
+        </form>
+</div>
+
+<div class="five columns">
+
+<div class='rowtest3'>
+</div>
+
+</div>
+
+<div class="three columns">
+<h6><b>Click on the list item</b></h6>
+<div class="result_car_list">
+</div>
+
+</div>
+
+</div>
+</div>
+  
+  <!-- example3 -->
+  
+  <!-- example4 -->
+  
+    <div class="container">
+    <div class="row">
+      <div class="twelve column" style="margin-top: 5%">
+        <h4>Example 4 Several drawing options</h4>
+        <hr>
+      </div>
+    </div>
+  </div>
+  
+<div class="container">
+  <div class="row">
+    
+<div class="four columns">
+<h6 style="text-align:center;"><b>Simple</b></h6>
+<div id='rowtest_an1'>
+
+	<div data-lcolor="#305f72">50.2</div>
+	<div data-lcolor="#f1d1b5">25.6</div>
+	<div data-lcolor="#f0b7a4">28.2</div>
+	<div data-lcolor="#f18c8e">25.2</div>
+
+</div>
+<div class="button-center">
+<input class="button-primary" type="button" id='an1' value="Draw">
+</div>
+
+
+    </div>
+    
+<div class="four columns">
+<h6 style="text-align:center;"><b>Fade animation</b></h6>    
+<div class='rowtest_an2'>
+
+	<div data-lcolor="#085f63">18.2</div>
+	<div data-lcolor="#49beb7">25.6</div>
+	<div data-lcolor="#facf5a">34.2</div>
+	<div data-lcolor="#ff5959">15.2</div>
+
+</div>
+
+<div class="button-center">
+<input class="button-primary" type="button" id='an2' value="Draw">
+</div>
+    
+    </div>
+    
+    
+        <div class="four columns">    
+        <h6 style="text-align:center;"><b>Round animation</b></h6>
+<div class='rowtest_an3'>
+
+	<div data-lcolor="#2d132c">10.2</div>
+	<div data-lcolor="#801336">35.6</div>
+	<div data-lcolor="#c72c41">28.2</div>
+	<div data-lcolor="#ee4540">18.2</div>
+
+</div>
+
+<div class="button-center">
+<input class="button-primary" type="button" id='an3' value="Draw">
+</div>
+    
+    </div>
+    
+  </div>
+</div>
+  
+  <!-- //example5 -->
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve column" style="margin-top: 5%">
+        <h4>Example 5 Use as menu and rotate animation</h4>
+        <hr>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+  <div class="row">
+    
+<div class="six columns">
+<h6><b>Click on the sector</b></h6>
+	<div class='rowtest4'>
+		<div data-lcolor="#313c42">4 Oct 1957<span>The world's first artificial satellite</span></div>
+		<div data-lcolor="#ef8e39">28 May 1959<span>First creatures to return alive from space</span></div>
+		<div data-lcolor="#005ce6">12 Apr 1961<span>The first man in space</span></div>
+		<div data-lcolor="#de2821">16 June 1963<span>The first woman in space</span></div>
+		<div data-lcolor="#7c6250">18 March 1965<span>First-ever spacewalk</span></div>
+		<div data-lcolor="#00cc4b">20 July 1969<span>First man on the Moon</span></div>
+		<div data-lcolor="#50b6bb">19 Apr 1971<span>The first space station is launched</span></div>
+		<div data-lcolor="#45969b">7 Feb 1984<span>'Free-flying' in space</span></div>
+		<div data-lcolor="#eb5f5d">20 Nov 1998<span>Assembly of ISS begins</span></div>
+		<div data-lcolor="#bb1542">28 Apr 2001<span>First space tourist</span></div>
+	</div>
+</div>
+
+<div class="six columns">
+<h6><b>10 key moments in space exploration</b></h6>
+
+<div class="menu_title" id="m0">
+The Sputnik 1 satellite was launched by the USSR on 4 October 1957. It was the first man-made object to leave the Earth's atmosphere. It weighed 180lb (83.5kg), and was described at the time as a "remarkable achievement."
+</div>
+
+<div class="menu_title" id="m1">
+Two monkeys, Able and Baker, became the first living creatures to survive a space flight. Able, a female rhesus monkey, and Baker, a female squirrel monkey, were launched into space by the US on a Jupiter missile. The monkeys were not the first living creatures to be sent on a mission. In November 1957, the USSR launched Sputnik 2, carrying a dog named Laika on board - she died a few hours into the mission from overheating and panic.
+</div>
+
+<div class="menu_title" id="m2">
+The USSR sent Yuri Gagarin into space from Baikonur Cosmodrome, Kazakhstan, in a Vostok spacecraft. He made a single orbit of Earth in 108 minutes, travelling at more than 17,000 miles per hour. The achievement was reported at the time as a blow to the Americans who had reportedly hoped to be the first to launch a man beyond Earth's atmosphere. The US launched American citizen Alan Shepard into space less than a month later on 5 May 1961.
+</div>
+
+<div class="menu_title" id="m3">
+Valentina Tereshkova, a former textile worker, became the first woman to be launched into space by the Soviet Union. She circled the Earth 49 times during three days in space, and was reportedly injured during the landing.
+</div>
+
+<div class="menu_title" id="m4">
+Russian cosmonaut Alexei Leonov carried out the first-ever spacewalk from the two-man Voskhod spacecraft. Leonov's suit expanded minutes after stepping into space due to the zero-pressure conditions. When he tried to get back into his spaceship, he could not fit through the hatch and had to release a valve to partially depressurise his suit and squeeze back inside.
+</div>
+
+<div class="menu_title" id="m5">
+American Neil Armstrong became the first man to set foot on the Moon. Armstrong and Edwin "Buzz" Aldrin spent two hours on the lunar surface setting up observation equipment and collecting rock samples. As Armstrong put his left foot down, he famously declared: "That's one small step for man, one giant leap for mankind." He described the surface as being like powdered charcoal and the landing craft left a crater about one foot deep. The mission lasted eight days, three hours, 18 minutes and 35 seconds
+</div>
+
+<div class="menu_title" id="m6">
+Russia launched Salyut, the first space station. The first crew to dock with the orbiting outpost later die during re-entry when the air leaks out of their Soyuz capsule.
+</div>
+
+<div class="menu_title" id="m7">
+Bruce McCandless became the first person to do a spacewalk without being attached to the spacecraft. He tested a manned manoeuvring unit, which allowed him to travel away from the orbiter, during a 90-minute spacewalk.
+</div>
+
+<div class="menu_title" id="m8">
+Assembly of the ISS began with the launch of its first module, Zarya, on a Proton rocket from Baikonur. The ISS is the largest artificial body in space. The station has been continuously occupied since November 2000. In that time, more than 200 people from 15 countries have visited.
+</div>
+
+<div class="menu_title" id="m9">
+Dennis Tito, a billionaire businessman from California, became the first paying passenger to go to outer space.
+Mr Tito set off from Kazakhstan for an eight-day holiday aboard the International Space Station, and paid $20m (£14m) for his trip.
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+  <!-- //example5 -->
+
+  <!-- example6 -->
+  <div class="container">
+    <div class="row">
+      <div class="twelve column" style="margin-top: 5%">
+        <h4>Example 6 Several options for setting the origin</h4>
+        <hr>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+  <div class="row">
+    
+<div class="three columns">
+<h6 style="text-align:center;"><b>0 degrees</b></h6>
+<div id='rowtest_ang1'>
+
+	<div data-lcolor="#444444">50.2</div>
+	<div data-lcolor="#ff8a5c">25.6</div>
+	<div data-lcolor="#ffdd67">54.2</div>
+	<div data-lcolor="#cf455c">56.2</div>
+	<div data-lcolor="#cf470c">56.2</div>
+
+</div>
+<div class="button-center">
+<input class="button-primary" type="button" id='ang1' value="Draw">
+</div>
+
+
+    </div>
+    
+<div class="three columns">
+<h6 style="text-align:center;"><b>90 degrees</b></h6>    
+<div id='rowtest_ang2'>
+
+	<div data-lcolor="#8559a5">18.2</div>
+	<div data-lcolor="#00bdaa">25.6</div>
+	<div data-lcolor="#a1dd70">24.2</div>
+	<div data-lcolor="#a1dd10">14.2</div>
+</div>
+
+<div class="button-center">
+<input class="button-primary" type="button" id='ang2' value="Draw">
+</div>
+    
+    </div>
+    
+    
+        <div class="three columns">    
+        <h6 style="text-align:center;"><b>180 degrees</b></h6>
+<div id='rowtest_ang3'>
+
+	<div data-lcolor="#f9d276">10.2</div>
+	<div data-lcolor="#ad1d45">35.6</div>
+	<div data-lcolor="#83142c">28.2</div>
+	<div data-lcolor="#44000d">18.2</div>
+	<div data-lcolor="#ee4540">20.2</div>
+
+</div>
+
+<div class="button-center">
+<input class="button-primary" type="button" id='ang3' value="Draw">
+</div>
+    
+    </div>
+    
+    <div class="three columns">    
+        <h6 style="text-align:center;"><b>270 degrees</b></h6>
+<div id='rowtest_ang4'>
+
+	<div data-lcolor="#a4d7e1">10.2</div>
+	<div data-lcolor="#daf1f9">35.6</div>
+	<div data-lcolor="#f0dab1">28.2</div>
+	<div data-lcolor="#f6edcf">18.2</div>
+
+</div>
+
+<div class="button-center">
+<input class="button-primary" type="button" id='ang4' value="Draw">
+</div>
+    
+    </div>
+    
+  </div>
+</div>
+
+<!-- //example6 -->
+  
+  <!-- example7 -->
+    <div class="container">
+    <div class="row">
+      <div class="twelve column" style="margin-top: 5%">
+        <h4>Example 7 Use methods and events</h4>
+        <hr>
+      </div>
+    </div>
+  </div>
+  
+    <div class="container">
+  <div class="row">
+    
+<div class="six columns">
+	<div class='rowtest7'>
+		<div data-lcolor="#3a1f5d">25</div>
+		<div data-lcolor="#c83660">32</div>
+		<div data-lcolor="#e15249">80</div>
+		<div data-lcolor="#f6d365">50</div>
+		<div data-lcolor="#207561">20</div>
+	</div>
+</div>
+
+<div class="six columns">
+
+ <div class="row">
+ <div class="button-left">
+	<input class="button-primary" type="button" id='row7_hover' value="Hover">
+</div>
+ </div>
+ 
+ <div class="row">
+ <div class="button-left">
+	<input class="button-primary" type="button" id='row7_change' value="Change">
+</div>
+ </div>
+ 
+ <div class="row">
+ <div class="button-left">
+	<input class="button-primary" type="button" id='row7_opt' value="Set options">
+</div>
+ </div>
+ 
+  <div class="row">
+ <div class="button-left">
+	<input class="button-primary" type="button" id='row7_destroy' value="Destroy">
+</div>
+ </div>
+ 
+  <div class="row">
+ <div class="button-left">
+	<input class="button-primary" type="button" id='row7_refresh' value="Refresh">
+</div>
+ </div>
+ 
+ <div class="row">
+ <div class="button-left">
+	<input class="button-primary" type="button" id='row8_getAttr' value="Get sector 1 value">
+</div>
+ </div>
+
+</div>
+</div>
+</div>
+<!-- //example7 -->
+
+  <!-- example8 -->
+  
+    <div class="container">
+    <div class="row">
+      <div class="twelve column" style="margin-top: 5%">
+        <h4>Some more examples</h4>
+        <hr>
+      </div>
+    </div>
+  </div>
+  
+<div class="container">
+  <div class="row">
+    
+<div class="four columns">
+<h6 style="text-align:center;"><b>Use easing</b></h6>
+<div id='rowtest_s1'>
+
+	<div data-lcolor="#ffb6b9">50.2</div>
+	<div data-lcolor="#fae3d9">25.6</div>
+	<div data-lcolor="#bbded6">28.2</div>
+	<div data-lcolor="#61c0bf">25</div>
+
+</div>
+<div class="button-center">
+<input class="button-primary" type="button" id='s1' value="Draw">
+</div>
+
+
+    </div>
+    
+<div class="four columns">
+<h6 style="text-align:center;"><b>Set indent from center</b></h6>    
+<div class='rowtest_s2'>
+
+	<div data-lcolor="#085f63">25.2</div>
+	<div data-lcolor="#49beb7">25.6</div>
+	<div data-lcolor="#facf5a">34.2</div>
+	<div data-lcolor="#ff5959">30.2</div>
+	<div data-lcolor="#085f63">22.2</div>
+	<div data-lcolor="#49beb7">80.6</div>
+	<div data-lcolor="#facf5a">30.2</div>
+	<div data-lcolor="#ff5959">45.2</div>
+
+</div>
+
+<div class="button-center">
+<input class="button-primary" type="button" id='s2' value="Draw">
+</div>
+    
+    </div>
+    
+    
+        <div class="four columns">    
+        <h6 style="text-align:center;"><b>Use Google Fonts</b></h6>
+<div class='rowtest_s3'>
+
+	<div data-lcolor="#2d132c">List</div>
+	<div data-lcolor="#801336">To</div>
+	<div data-lcolor="#c72c41">Pie</div>
+
+</div>
+
+<div class="button-center">
+<input class="button-primary" type="button" id='s3' value="Draw">
+</div>
+    
+    </div>
+    
+  </div>
+</div>
+  
+  <!-- //example8 -->
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+$(document).ready(function(){
+	
+	/*Example1*/
+	$('.rowtest1').listtopie({
+		  size:'auto',  
+		  strokeWidth:0,
+		  hoverEvent:false,
+		  textColor:'#000',
+		  strokeColor:'#cccccc',
+		  backColor:'#ffffff',
+		  textSize:'16',
+		  marginCenter:2,
+		  infoText:true,
+		  setValues:true,
+		  infoTextBlockOpacity:'0.8'
+	});
+	/*Example1*/
+	
+	/*Example2*/
+	$('.rowtest2').listtopie({
+		  size:'auto',  
+		  strokeWidth:2,
+		  hoverEvent:true,
+		  hoverBorderColor:'#585858',
+		  hoverWidth:2,
+		  textSize:'16',
+		  marginCenter:30,
+		  listVal:true,
+		  strokeColor:'#fff',
+		  listValMouseOver: true,
+		  infoText:false,
+		  setValues:false,
+		  listValInsertClass:'result_list',
+		  backColorOpacity: '0.8',
+		  hoverSectorColor:true,
+		  usePercent:true
+	});
+	/*Example2*/
+	
+	/*Example3*/
+	$('#ljson').on('click',function(){
+		var data = $('#exampleJson').val();
+		$('.rowtest3').listtopie({
+			  size:'auto',  
+			  strokeWidth:2,
+			  dataJson:data,
+			  hoverEvent:true,
+			  speedDraw:50,
+			  hoverBorderColor:'#585858',
+			  hoverWidth:1,
+			  textColor:'#cccccc',
+			  strokeColor:'#f1f1f1',
+			  backColor:'#f1f1f1',
+			  textSize:'16',
+			  marginCenter:20,
+			  listVal:true,
+			  listValClick:true,
+			  listValMouseOver: false,
+			  infoText:true,
+			  setValues:false,
+			  listValInsertClass:'result_car_list',
+			  backColorOpacity: '0.5',
+			  hoverSectorColor:true,
+			  usePercent:true
+		});
+	});
+	/*Example3*/
+	
+	/*Example4*/
+	$('#rowtest_an1').listtopie({
+		  strokeWidth:2,
+		  hoverEvent:false,
+		  drawType:'simple',
+		  hoverColor:'green',
+		  textColor:'#000',
+		  speedDraw:150,
+		  strokeColor:'#ffffff',
+		  textSize:'13',
+		  hoverAnimate:false,
+		  marginCenter:0,
+		  sectorRotate:false
+	});
+	
+	$('#an1').on('click',function(){
+		$('#rowtest_an1').listtopie('refresh');
+	});
+	
+	
+	$('.rowtest_an2').listtopie({
+		  strokeWidth:2,
+		  hoverEvent:false,
+		  drawType:'fade',
+		  speedDraw:300,
+		  hoverColor:'green',
+		  textColor:'#000',
+		  strokeColor:'#ffffff',
+		  textSize:'13',
+		  hoverAnimate:false,
+		  marginCenter:0,
+		  sectorRotate:false
+	});
+	
+	$('#an2').on('click',function(){
+		$('.rowtest_an2').listtopie('refresh');
+	});
+	
+	$('.rowtest_an3').listtopie({
+		  strokeWidth:2,
+		  hoverEvent:false,
+		  drawType:'round',
+		  speedDraw:200,
+		  hoverColor:'green',
+		  textColor:'#000',
+		  strokeColor:'#ffffff',
+		  textSize:'13',
+		  hoverAnimate:false,
+		  marginCenter:0,
+		  sectorRotate:false
+	});
+	
+	$('#an3').on('click',function(){
+		$('.rowtest_an3').listtopie('refresh');
+	});
+	/*Example4*/
+	
+	
+	
+	
+	
+	/*Example5*/
+	$('.rowtest4').listtopie({
+		  size:'auto',  
+		  useMenu:true,
+		  strokeWidth:3,
+		  speedDraw:150,
+		  hoverEvent:false,
+		  sectorRotate:true,
+		  hoverBorderColor:'#6fe7dd',
+		  hoverWidth:2,
+		  textSize:'16',
+		  marginCenter:35,
+		  listVal:false,
+		  listValMouseOver: false,
+		  infoText:true,
+		  setValues:true,
+		  backColorOpacity: '0.5',
+		  hoverSectorColor:true,
+		  usePercent:false,
+		  textSize:'12'
+	});
+	
+	$('.rowtest4').on('afterChange', function(event, listtopie){
+		  var idSector = listtopie.currentChangeSector;
+		  $( ".menu_title" ).css('display','none');
+		  $('.rowtest4').listtopie('hoverGoTo',idSector);
+		  $("#m" + idSector).fadeIn("slow");
+	});
+	
+	/*example5*/
+	
+	/*example6*/
+	$('#rowtest_ang1').listtopie({
+		  strokeWidth:2,
+		  hoverEvent:false,
+		  drawType:'round',
+		  speedDraw:200,
+		  hoverColor:'green',
+		  textColor:'#000',
+		  strokeColor:'#ffffff',
+		  textSize:'13',
+		  hoverAnimate:false,
+		  marginCenter:20,
+		  infoText:true,
+		  sectorRotate:true
+	});
+	
+	$('#ang1').on('click',function(){
+		$('#rowtest_ang1').listtopie('refresh');
+	
+	});
+	
+	$('#rowtest_ang1').on('afterChange', function(event, listtopie){
+		var idSector = listtopie.currentChangeSector;
+		  $('#rowtest_ang1').listtopie('hoverGoTo',idSector);	
+	});
+	
+	$('#rowtest_ang2').listtopie({
+		startAngle:90,  
+		strokeWidth:0,
+		  hoverEvent:false,
+		  drawType:'round',
+		  speedDraw:200,
+		  hoverColor:'green',
+		  textColor:'#000',
+		  strokeColor:'#ffffff',
+		  textSize:'13',
+		  hoverAnimate:false,
+		  marginCenter:10,
+		  infoText:true,
+		  sectorRotate:true
+	});
+	
+	$('#ang2').on('click',function(){
+		$('#rowtest_ang2').listtopie('refresh');
+	
+	});
+	
+	$('#rowtest_ang2').on('afterChange', function(event, listtopie){
+		var idSector = listtopie.currentChangeSector;
+		  $('#rowtest_ang2').listtopie('hoverGoTo',idSector);	
+	});
+	
+	$('#rowtest_ang3').listtopie({
+		startAngle:180,  
+		strokeWidth:2,
+		  hoverEvent:false,
+		  drawType:'round',
+		  speedDraw:200,
+		  hoverColor:'#ffffff',
+		  textColor:'#000',
+		  strokeColor:'#ffffff',
+		  textSize:'13',
+		  hoverAnimate:false,
+		  marginCenter:5,
+		  infoText:true,
+		  sectorRotate:true
+	});
+	
+	$('#ang3').on('click',function(){
+		$('#rowtest_ang3').listtopie('refresh');
+	
+	});
+	
+	$('#rowtest_ang3').on('afterChange', function(event, listtopie){
+		var idSector = listtopie.currentChangeSector;
+		  $('#rowtest_ang3').listtopie('hoverGoTo',idSector);	
+	});
+	
+	$('#rowtest_ang4').listtopie({
+		startAngle:270,  
+		strokeWidth:0,
+		  hoverEvent:false,
+		  drawType:'round',
+		  speedDraw:200,
+		  hoverColor:'#ffffff',
+		  textColor:'#000',
+		  strokeColor:'#ffffff',
+		  textSize:'13',
+		  hoverAnimate:false,
+		  marginCenter:5,
+		  infoText:true,
+		  sectorRotate:true
+	});
+	
+	$('#ang4').on('click',function(){
+		$('#rowtest_ang4').listtopie('refresh');
+	
+	});
+	
+	$('#rowtest_ang4').on('afterChange', function(event, listtopie){
+		var idSector = listtopie.currentChangeSector;
+		  $('#rowtest_ang4').listtopie('hoverGoTo',idSector);	
+	});
+	/*example6*/
+	
+	
+	/*example7*/
+	$('.rowtest7').listtopie({
+		startAngle:0,  
+		strokeWidth:5,
+		  hoverEvent:true,
+		  drawType:'round',
+		  speedDraw:100,
+		  hoverColor:'#ffffff',
+		  textColor:'#000',
+		  strokeColor:'#ffffff',
+		  textSize:'18',
+		  hoverAnimate:true,
+		  marginCenter:50,
+		  sectorRotate:true,
+		  infoText:true,
+		  usePercent:true
+	});
+	
+	$('#row7_hover').on('click',function(){
+		$('.rowtest7').listtopie('hoverGoTo',2);
+	});
+	
+	$('#row7_change').on('click',function(){
+		$('.rowtest7').listtopie('changeGoTo',1);
+	});
+	
+	$('#row7_opt').on('click',function(){
+		$('.rowtest7').listtopie('listtopieSetOption', 'drawType', 'fade', true);
+	});
+	
+	$('#row7_destroy').on('click',function(){
+		$('.rowtest7').listtopie('destroy');
+	});
+	
+	$('#row7_refresh').on('click',function(){
+		$('.rowtest7').listtopie('refresh');
+	});
+	
+	$('.rowtest7').on('unInit', function(event, listtopie){
+		  alert('afterDestroy');
+	});
+	
+	$('.rowtest7').on('afterChange', function(event, listtopie,currentChangeSector){
+		  alert('afterChange event - Current change sector number -' + listtopie.currentChangeSector);
+	});
+	
+	$('#row8_getAttr').on('click',function(){
+		var v = $('.rowtest7').listtopie('getSectorAttr',1,'note');
+		alert('Sector 1 value is ' + v);
+	});
+	/*example7*/
+	
+	
+	/*example8*/
+	$('#rowtest_s1').listtopie({
+		startAngle:0,  
+		strokeWidth:0,
+		  hoverEvent:false,
+		  drawType:'round',
+		  speedDraw:150,
+		  hoverColor:'#ffffff',
+		  textColor:'#000',
+		  strokeColor:'#ffffff',
+		  textSize:'18',
+		  hoverAnimate:true,
+		  marginCenter:1,
+		  sectorRotate:true,
+		  easingType:mina.bounce
+	});
+	
+	$('#s1').on('click',function(){
+		$('#rowtest_s1').listtopie('refresh');
+	});
+	
+	$('.rowtest_s2').listtopie({
+		startAngle:270,  
+		strokeWidth:5,
+		  hoverEvent:true,
+		  hoverBorderColor:'#2a363b',
+		  hoverAnimate:false,
+		  drawType:'round',
+		  speedDraw:150,
+		  hoverColor:'#ffffff',
+		  textColor:'#000',
+		  strokeColor:'#ffffff',
+		  textSize:'14',
+		  hoverAnimate:true,
+		  marginCenter:50
+	});
+	
+	$('#s2').on('click',function(){
+		$('.rowtest_s2').listtopie('refresh');
+	});
+	
+	$('.rowtest_s3').listtopie({
+		startAngle:180,  
+		strokeWidth:5,
+		useMenu:true,
+		  hoverEvent:false,
+		  hoverBorderColor:'#2a363b',
+		  hoverAnimate:false,
+		  drawType:'fade',
+		  speedDraw:150,
+		  hoverColor:'#ffffff',
+		  textColor:'#fff',
+		  strokeColor:'#ffffff',
+		  textSize:'50',
+		  hoverAnimate:true,
+		  fontWeight:'400',
+		  marginCenter:10
+	});
+	
+	$('#s3').on('click',function(){
+		$('.rowtest_s3').listtopie('refresh');
+	});
+	/*example8*/
+	
+});
+
+
+
+ 
+</script>
+  
   <h2>License</h2>
 
  <p>
