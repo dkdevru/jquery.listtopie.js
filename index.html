@@ -637,7 +637,8 @@ $(document).ready(function(){
 		  sectorRotate:false
 	});
 	
-	$('#an3').on('click',function(){
+	$('#an3').on('click',function(e){
+		e.preventDefault();
 		$('.rowtest_an3').listtopie('refresh');
 	});
 	/*Example4*/
