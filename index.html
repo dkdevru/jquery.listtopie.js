@@ -416,33 +416,98 @@ $('#button').on('click',function(){
 </div>
  
  <div class="row">
+ <div class="three columns code_area">
  <div class="button-left">
 	<input class="button-primary" type="button" id='row7_change' value="Change">
 </div>
+</div>
+
+<div class="nine columns text-left">
+<pre>
+<code>
+	$('#button').on('click',function(){
+		$('.element').listtopie('changeGoTo',1);
+	});
+</code>
+</pre>
+</div>
+
  </div>
  
  <div class="row">
+  <div class="three columns code_area">
  <div class="button-left">
 	<input class="button-primary" type="button" id='row7_opt' value="Set options">
 </div>
+</div>
+
+<div class="nine columns text-left">
+<pre>
+<code>
+	$('#button').on('click',function(){
+		$('.element').listtopie('listtopieSetOption', 'drawType', 'fade', true);
+	});
+</code>
+</pre>
+</div>
+
  </div>
  
   <div class="row">
+  <div class="three columns code_area">
  <div class="button-left">
 	<input class="button-primary" type="button" id='row7_destroy' value="Destroy">
 </div>
+</div>
+
+<div class="nine columns text-left">
+<pre>
+<code>
+	$('#button').on('click',function(){
+		$('.element').listtopie('destroy');
+	});
+</code>
+</pre>
+</div>
+
  </div>
  
   <div class="row">
+  <div class="three columns code_area">
  <div class="button-left">
 	<input class="button-primary" type="button" id='row7_refresh' value="Refresh">
 </div>
+</div>
+
+<div class="nine columns text-left">
+<pre>
+<code>
+	$('#button').on('click',function(){
+		$('.element').listtopie('refresh');
+	});
+</code>
+</pre>
+</div>
+
  </div>
  
  <div class="row">
+   <div class="three columns code_area">
  <div class="button-left">
 	<input class="button-primary" type="button" id='row8_getAttr' value="Get sector 1 value">
 </div>
+</div>
+
+<div class="nine columns text-left">
+<pre>
+<code>
+	$('#button').on('click',function(){
+		var v = $('.element').listtopie('getSectorAttr',1,'note');
+	});
+</code>
+</pre>
+</div>
+
  </div>
 
 </div>
